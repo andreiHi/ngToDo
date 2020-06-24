@@ -8,12 +8,16 @@ import { TodoWidgetComponent } from './components/widget/todo-widget/todo-widget
 import { TodoCreateFormUiComponent } from './components/ui/todo-create-form-ui/todo-create-form-ui.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TodoListComponent } from './components/ui/todo-list/todo-list.component';
+import { TodoListItemComponent } from './components/ui/todo-list-item/todo-list-item.component';
+import { TodoItemEditComponent } from './components/ui/todo-item-edit/todo-item-edit.component';
 
 @NgModule({
   declarations: [TodoPageComponent,
     TodoWidgetComponent,
     TodoCreateFormUiComponent,
-    TodoListComponent
+    TodoListComponent,
+    TodoListItemComponent,
+    TodoItemEditComponent
   ],
   imports: [
     CommonModule,
