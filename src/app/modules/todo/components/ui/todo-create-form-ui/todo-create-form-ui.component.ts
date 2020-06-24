@@ -19,6 +19,7 @@ export class TodoCreateFormUiComponent implements OnInit {
   onCreate() {
     if (!!this.name) {
       this.create.emit(this.name);
+      this.name = undefined;
     }
   }
 }

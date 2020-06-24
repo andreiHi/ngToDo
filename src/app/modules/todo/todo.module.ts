@@ -7,9 +7,14 @@ import { TodoRoutingModule } from './todo-routing.module';
 import { TodoWidgetComponent } from './components/widget/todo-widget/todo-widget.component';
 import { TodoCreateFormUiComponent } from './components/ui/todo-create-form-ui/todo-create-form-ui.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TodoListComponent } from './components/ui/todo-list/todo-list.component';
 
 @NgModule({
-  declarations: [TodoPageComponent, TodoWidgetComponent, TodoCreateFormUiComponent],
+  declarations: [TodoPageComponent,
+    TodoWidgetComponent,
+    TodoCreateFormUiComponent,
+    TodoListComponent
+  ],
   imports: [
     CommonModule,
     StoreModule.forFeature(TODO_REDUCER_NODE, todoReducer), // подключение стора в дочернем модуле
@@ -19,5 +24,4 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ]
 })
 export class TodoModule {
-
 }
